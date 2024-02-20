@@ -29,7 +29,7 @@ After the train has passed and the IR sensor no longer detects obstructions, the
 ## Source Code
 The "Train Barrier" project utilizes an Arduino to simulate the operation of an automatic railway barrier, using an IR sensor to detect trains, a servo motor to control the barrier, LEDs for signaling, and a buzzer for emitting warning sounds.
 
-# Reading the IR Sensor
+### Reading the IR Sensor
 
 ```cpp
 irSensorState = digitalRead(irSensorPin); // Read the IR sensor state
@@ -38,7 +38,7 @@ irSensorState = digitalRead(irSensorPin); // Read the IR sensor state
 - The IR sensor state is read through the digital pin connected to `irSensorPin`.
 - If the sensor detects an object (such as a train), `irSensorState` will be `LOW`, indicating the presence of the train.
 
-# Controlling the Servo Motor
+### Controlling the Servo Motor
 
 ```cpp
 if (irSensorState == 0) {
